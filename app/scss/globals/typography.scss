@@ -1,0 +1,14 @@
+@use '../util' as *;
+
+a:link,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.1;
+}
