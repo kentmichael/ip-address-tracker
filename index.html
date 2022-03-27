@@ -14,13 +14,47 @@
   <!--CSS File-->
   <link rel="stylesheet" href="dist/style.css">
   <link rel="shortcut icon" href="/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
   <!--JavaScript File-->
+  <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
   <script defer src="dist/script.js"></script>
 </head>
 <body>
+  <header>
+    <section class="container">
+      <h1>IP Address Tracker</h1>
+      <form>
+        <label for="">
+          <input type="text" id="input-ip" aria-label="input-ip" placeholder="Search for any IP address or domain">
+          <button aria-label="enter-ip"></button>
+        </label>
+      </form>
+      <div class="info-ip">
+        <div>
+          <span class="title">IP Address</span>
+          <span class="content">192.212.174.101</span>
+        </div>
+        <div>
+          <span class="title">Location</span>
+          <span class="content">Brooklyn, NY 10001</span>
+        </div>
+        <div>
+          <span class="title">Timezone</span>
+          <span class="content">UTC-5:00</span>
+        </div>
+        <div>
+          <span class="title">ISP</span>
+          <span class="content">SpaceX Starlink</span>
+        </div>
+      </div>
+    </section>
+  </header>
   <main>
-    <section></section>
-    <div></div>
+    <div id="map"></div>
   </main>
 </body>
 </html>
